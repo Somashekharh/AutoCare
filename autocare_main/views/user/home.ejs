@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - AutoCare</title>
+    <style>
+        /* General CSS reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Header section */
+        header {
+            position: relative;
+        }
+
+        /* Hero section styling */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://wallpaperaccess.com/full/2085201.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .hero-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #343a40;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+        }
+
+        /* Container for content sections */
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Sections within the container */
+        section h2 {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        /* Links within service description */
+        .learn-more {
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to AutoCare</h1>
+                <p>Your trusted partner for top-notch auto care services.</p>
+                <a href="/login-service" class="btn">Explore Services</a>
+            </div>
+        </section>
+
+        <nav>
+            <a href="/login-service">Our Service</a>
+            <a href="/routine-maintenance">Routine Maintenance</a>
+            <a href="/repairs">Repairs</a>
+            <a href="/diagnostics">Diagnostics</a>
+            <a href="/body-work">Body Work</a>
+            <a href="/towing">Towing</a>
+            <a href="/orders">Orders</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Our Services</h2>
+            <p><strong>Routine Maintenance:</strong> Oil changes, tire rotations, and fluid checks. <a class="learn-more" href="/routine-maintenance">Learn More</a></p>
+            <p><strong>Repairs:</strong> Engine repair, transmission repair, brake service, and electrical system repairs. <a class="learn-more" href="/repairs">Learn More</a></p>
+            <p><strong>Diagnostics:</strong> Using diagnostic tools to identify issues with the engine, transmission, or other systems. <a class="learn-more" href="/diagnostics">Learn More</a></p>
+            <p><strong>Body Work:</strong> Dent repair, paint jobs, and collision repairs. <a class="learn-more" href="/body-work">Learn More</a></p>
+            <p><strong>Towing and Roadside Assistance:</strong> Towing services, flat tire changes, and emergency fuel delivery. <a class="learn-more" href="/towing">Learn More</a></p>
+            <p><strong>Battery Services:</strong> Battery testing, replacement, and charging system checks. <a class="learn-more" href="/battery-services">Learn More</a></p>
+            <p><strong>Cooling System:</strong> Radiator repair, coolant flushes, and thermostat replacement. <a class="learn-more" href="/cooling-system">Learn More</a></p>
+            <p><strong>Suspension and Steering:</strong> Shock absorber replacement, alignment, and suspension repairs. <a class="learn-more" href="/suspension-steering">Learn More</a></p>
+            <p><strong>Air Conditioning Services:</strong> AC diagnostics, recharge, and repair. <a class="learn-more" href="/air-conditioning">Learn More</a></p>
+            <p><strong>Transmission Services:</strong> Fluid changes, repairs, and replacements. <a class="learn-more" href="/transmission-services">Learn More</a></p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 AutoCare. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

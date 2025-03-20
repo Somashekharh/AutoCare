@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AutoCare</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://example.com/background.jpg') no-repeat center center/cover; /* Replace with a valid image URL */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #007BFF;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                max-width: 90%;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            button {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AutoCare</h1>
+    </header>
+
+    <div class="container">
+        <h1>Login</h1>
+        <form action="/login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <a href="/register">Don't have an account? Register here</a>
+    </div>
+</body>
+</html>

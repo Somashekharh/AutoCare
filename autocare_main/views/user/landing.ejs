@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCare - Professional Auto Services</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Basic CSS for the layout */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            background-color: #007BFF;
+            padding: 20px 0;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: transparent;
+            transition: background-color 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #0056b3;
+        }
+        .hero {
+            background: url('https://wallpaperaccess.com/full/2085201.jpg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .hero-content h2 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .hero-content p {
+            margin: 10px 0;
+            font-size: 1.4rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: white;
+            background-color: #28a745;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            margin: 40px 0;
+            padding: 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .about img, 
+        .services-overview img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1><a href="/">AutoCare</a></h1>
+                <ul>
+                    <li><a href="/service-prices">Service Prices</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to AutoCare</h2>
+                <p>Your trusted partner for top-notch auto care services.</p>
+                <a href="/service" class="btn">Explore Services</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <img src="https://wallpaperaccess.com/full/2085197.jpg" alt="About AutoCare">
+                <p>At AutoCare, we offer a range of high-quality auto services to ensure your vehicle is always in peak condition. Our team of experienced professionals is dedicated to providing excellent service and customer satisfaction.</p>
+            </div>
+        </section>
+        <section class="services-overview">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>We offer a wide range of auto care services to meet your needs.</p>
+                <img src="https://wallpaperaccess.com/full/2085237.jpg" alt="Our Services">
+                <a href="/service" class="btn">View All Services</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AutoCare. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

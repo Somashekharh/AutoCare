@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - AutoCare</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+            margin-top: 80px;
+        }
+
+        h1 {
+            color: #007BFF;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            flex: 1;
+            margin-bottom: 0;
+            font-weight: bold;
+            align-self: center;
+            min-width: 120px;
+        }
+
+        .form-group input {
+            flex: 2;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .form-group {
+                flex-direction: column;
+            }
+
+            .form-group label {
+                margin-bottom: 5px;
+            }
+
+            .form-group input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AutoCare</h1>
+    </header>
+    <div class="container">
+        <h1>Register</h1>
+        <form action="/register" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="vehicle_name">Vehicle Name:</label>
+                <input type="text" id="vehicle_name" name="vehicle_name">
+            </div>
+
+            <div class="form-group">
+                <label for="registration_number">Registration Number:</label>
+                <input type="text" id="registration_number" name="registration_number">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+        <a href="/login">Already have an account? Login</a>
+    </div>
+</body>
+</html>
