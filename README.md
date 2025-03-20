@@ -135,8 +135,8 @@ node app.js
 
 ## 6. 🖼️ **Screenshots**
 - Landing Page 
-https://github.com/Somashekharh/Autocare/blob/fad1e62e64d913aaa8af61877133ca1415b719bc/AutoCare/autocare_main/public/AutoCare%20-%20Professional%20Auto%20Services.jpg
+https://github.com/Somashekharh/AutoCare/blob/237a1a993185a1279593d8b38aa5060fe5bba8a0/autocare_main/public/Home%20-%20AutoCare.png
 - Login Page
-https://github.com/Somashekharh/Autocare/blob/fad1e62e64d913aaa8af61877133ca1415b719bc/AutoCare/autocare_main/public/Login%20-%20AutoCare.pdf.jpg
+https://github.com/Somashekharh/AutoCare/blob/237a1a993185a1279593d8b38aa5060fe5bba8a0/autocare_main/public/Login%20-%20AutoCare.jpg
 - Register Page
-https://github.com/Somashekharh/Autocare/blob/fad1e62e64d913aaa8af61877133ca1415b719bc/AutoCare/autocare_main/public/Register%20-%20AutoCare.jpg
+https://github.com/Somashekharh/AutoCare/blob/237a1a993185a1279593d8b38aa5060fe5bba8a0/autocare_main/public/Register%20-%20AutoCare.jpg
